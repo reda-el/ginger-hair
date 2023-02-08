@@ -10,6 +10,10 @@ body {
   direction: rtl;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   line-height: 28px;
 }
@@ -157,7 +161,7 @@ h1 {
   color: #383838;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 940px) {
   .second-section .devider {
     font-size: 30px;
   }
@@ -356,6 +360,81 @@ h1 {
     border-radius: 0px 0px 30px 30px;
   }
 }
+.how-to-use-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.how-to-use-wrapper h2 {
+  color: #02273a;
+}
+.how-to-use-wrapper .wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+.how-to-use-wrapper .wrapper .column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.how-to-use-wrapper .wrapper .column .right img {
+  width: 50px;
+  padding-left: 10px;
+}
+.how-to-use-wrapper .wrapper .column .left p {
+  font-size: 17px;
+}
+
+.description {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+.description h2 {
+  color: #02273a;
+}
+.description .wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10px;
+  gap: 40px;
+}
+.description .wrapper .column {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #e7ffeb;
+  border-radius: 10px;
+  border: 1px solid rgb(187, 187, 187);
+}
+.description .wrapper .column .top h4 {
+  font-weight: bold;
+  font-size: 22px;
+  color: rgb(42, 42, 42);
+}
+.description .wrapper .column .top p {
+  font-size: 19px;
+}
+.description .wrapper .column .bottom img {
+  width: 160px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 867px) {
+  .description .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 567px) {
+  .description .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
 .testimonials {
   width: 100%;
   height: auto;
@@ -415,10 +494,6 @@ h1 {
   color: rgb(63, 63, 63);
   text-align: center;
 }
-.testimonials .wrapper .column p span {
-  font-size: 60px;
-  color: #4dc7e4;
-}
 
 @media only screen and (max-width: 768px) {
   .testimonials .wrapper {
@@ -440,7 +515,7 @@ h1 {
   width: 100%;
   height: auto;
   padding: 50px 20px;
-  background-color: #c8ffd3;
+  background-color: #e1ffe7;
 }
 .guarantee-section button {
   width: 160px;
@@ -477,7 +552,7 @@ h1 {
   text-align: center;
 }
 .guarantee-section .wrapper .column img {
-  width: 50%;
+  width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-top: 20px;
@@ -488,7 +563,7 @@ h1 {
 }
 .guarantee-section .wrapper .column p {
   text-align: center;
-  color: gray;
+  color: rgb(61, 61, 61);
 }
 
 @media only screen and (max-width: 886px) {
